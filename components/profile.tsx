@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { CalendarIcon, AtSignIcon, MailIcon, StarIcon, ShieldIcon, AwardIcon, CodeXml, User } from 'lucide-react'
-import ColorThief from 'colorthief'
+import ColorThief from 'colorthief' // @ts-ignore
 import { Badge as BadgeType, sortBadges } from '../types/badge'
 
 function useImageColors(imageUrl: string | null | undefined) {

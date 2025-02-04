@@ -73,7 +73,6 @@ async function logError(error: Error, context: string) {
 export function ClientLayout({ children }: { children: React.ReactNode }) {
   const router = useRouter()
   const pathname = usePathname()
-  const searchParams = useSearchParams()
   const { data: session } = useSession()
   const hasMounted = useRef(false)
 

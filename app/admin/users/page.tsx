@@ -73,9 +73,7 @@ export default function DashboardPage() {
         }
       }
     }
-
     fetchBadges()
-
     if (status === "unauthenticated") {
       router.push("/dashboard")
     } else if (status === "authenticated") {

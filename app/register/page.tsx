@@ -35,8 +35,7 @@ export default function RegisterPage() {
   const [otpCode, setOtpCode] = useState(""); // Added OTP code state
   const router = useRouter();
   const { data: session, status } = useSession();
-  const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callback") || "/dashboard";
+  const callbackUrl = "/dashboard";
 
   useEffect(() => {
     if (status === "authenticated") {
